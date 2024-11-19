@@ -1,0 +1,82 @@
+:root {
+  /* YInMn Blue - Main brand color (#34526E) */
+  --yinmn-blue-900: #0a1116;
+  --yinmn-blue-800: #15212c;
+  --yinmn-blue-700: #1f3243;
+  --yinmn-blue-600: #2a4259;
+  --yinmn-blue-500: #34526e;
+  --yinmn-blue-400: #4a769e;
+  --yinmn-blue-300: #7298bc;
+  --yinmn-blue-200: #a1bad3;
+  --yinmn-blue-100: #d0dde9;
+  --yinmn-blue: var(--yinmn-blue-500);
+
+  /* Wheat - Background and accent (#EED8B7) */
+  --wheat-100: #2e2b25;
+  --wheat-200: #5c564a;
+  --wheat-300: #8a826f;
+  --wheat-400: #b8ad94;
+  --wheat-500: #eed8b7;
+  --wheat-600: #f1e0c5;
+  --wheat-700: #f4e7d3;
+  --wheat-800: #f7efe1;
+  --wheat-900: #faf7ef;
+  --wheat: var(--wheat-500);
+
+  /* Chamoisee - Neutral accent (#8A765C) */
+  --chamoisee-900: #1c1712;
+  --chamoisee-800: #372e24;
+  --chamoisee-700: #534537;
+  --chamoisee-600: #6e5c49;
+  --chamoisee-500: #8a765c;
+  --chamoisee-400: #a59278;
+  --chamoisee-300: #bcad9a;
+  --chamoisee-200: #d2c8bc;
+  --chamoisee-100: #e9e4dd;
+  --chamoisee: var(--chamoisee-500);
+
+  /* Tangerine - Call to action (#EF8B37) */
+  --tangerine-900: #371904;
+  --tangerine-800: #6e3209;
+  --tangerine-700: #a44b0d;
+  --tangerine-600: #db6412;
+  --tangerine-500: #ef8b37;
+  --tangerine-400: #f2a25f;
+  --tangerine-300: #f5b987;
+  --tangerine-200: #f8d0af;
+  --tangerine-100: #fce7d7;
+  --tangerine: var(--tangerine-500);
+
+  /* Hunyadi Yellow - Accent (#F4B343) */
+  --hunyadi-yellow-900: #3b2503;
+  --hunyadi-yellow-800: #764b06;
+  --hunyadi-yellow-700: #b0700a;
+  --hunyadi-yellow-600: #eb950d;
+  --hunyadi-yellow-500: #f4b343;
+  --hunyadi-yellow-400: #f6c268;
+  --hunyadi-yellow-300: #f8d18d;
+  --hunyadi-yellow-200: #fae0b2;
+  --hunyadi-yellow-100: #fdf0d7;
+  --hunyadi-yellow: var(--hunyadi-yellow-500);
+
+  /* Semantic Colors */
+  --primary: var(--yinmn-blue-500);
+  --primary-dark: var(--yinmn-blue-700);
+  --primary-light: var(--yinmn-blue-300);
+  
+  --secondary: var(--chamoisee-500);
+  --secondary-dark: var(--chamoisee-700);
+  --secondary-light: var(--chamoisee-300);
+  
+  --accent: var(--tangerine-500);
+  --accent-dark: var(--tangerine-700);
+  --accent-light: var(--tangerine-300);
+  
+  --background: var(--wheat-500);
+  --background-dark: var(--wheat-700);
+  --background-light: var(--wheat-300);
+  
+  --text: var(--yinmn-blue-900);
+  --text-light: var(--yinmn-blue-700);
+  --text-inverse: var(--wheat-100);
+}

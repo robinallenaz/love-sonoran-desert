@@ -1,38 +1,239 @@
+/* Import the color variables */
+@import './colors.css';
+
+/* Root variables */
+:root {
+  --header-height: 4rem;
+  --section-padding: 4rem;
+  --card-radius: 12px;
+}
+
+/* App styles */
 .App {
   text-align: center;
+  color: var(--text);
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header styles */
+.header {
+  background-color: var(--primary);
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--header-height);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  margin: 0;
+  color: var(--wheat-500);
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--wheat-300);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  color: var(--wheat-500);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero styles */
+.hero {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  padding: 6rem 2rem;
   color: white;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.hero h2 {
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  line-height: 1.2;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: var(--wheat-300);
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+/* CTA button styles */
+.cta-button {
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: var(--card-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+  background-color: var(--accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Section styles */
+section {
+  padding: var(--section-padding) 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section h2 {
+  color: var(--text);
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Help options styles */
+.help-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.help-card {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: var(--card-radius);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid var(--wheat-200);
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  border-color: var(--accent);
+}
+
+.help-card h3 {
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.help-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Contact styles */
+.contact {
+  background-color: var(--background);
+  color: var(--text);
+  border-radius: var(--card-radius);
+  margin: 2rem;
+  padding: 4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact h2 {
+  color: var(--text);
+}
+
+.contact p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-dark);
+  color: var(--wheat-300);
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer p {
+  opacity: 0.9;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 3rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .help-options {
+    grid-template-columns: 1fr;
+  }
+
+  .contact {
+    margin: 1rem;
+    padding: 2rem;
   }
 }
