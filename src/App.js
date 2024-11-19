@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ImageGallery from './components/ImageGallery';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <h2>About Us</h2>
         <p>Love Sonoran Desert is dedicated to helping unhoused individuals in Arizona by providing essential supplies and support. We believe in treating everyone with dignity and respect while working to make a positive impact in our community.</p>
       </section>
+
+      <ImageGallery />
 
       <section id="mission" className="mission">
         <h2>Our Mission</h2>
@@ -50,8 +53,8 @@ function App() {
 
       <section id="contact" className="contact">
         <h2>Contact Us</h2>
-        <p>Email: help@lovesonorandesert.org</p>
-        <p>Phone: (555) 123-4567</p>
+        <p>Email: LoveSonoranDesert@yahoo.com</p>
+        <p>Phone: (480) 647-6537</p>
       </section>
 
       <footer>

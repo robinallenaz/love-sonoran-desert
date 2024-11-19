@@ -60,7 +60,7 @@
   --hunyadi-yellow: var(--hunyadi-yellow-500);
 
   /* Semantic Colors */
-  --primary: var(--yinmn-blue-500);
+  --primary: var(--yinmn-blue);
   --primary-dark: var(--yinmn-blue-700);
   --primary-light: var(--yinmn-blue-300);
   
@@ -72,7 +72,7 @@
   --accent-dark: var(--tangerine-700);
   --accent-light: var(--tangerine-300);
   
-  --background: var(--wheat-500);
+  --background: white;
   --background-dark: var(--wheat-700);
   --background-light: var(--wheat-300);
   
