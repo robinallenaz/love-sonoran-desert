@@ -53,8 +53,8 @@ function App() {
 
       <section id="contact" className="contact">
         <h2>Contact Us</h2>
-        <p>Email: help@lovesonorandesert.org</p>
-        <p>Phone: (555) 123-4567</p>
+        <p>Email: LoveSonoranDesert@yahoo.com</p>
+        <p>Phone: (480) 647-6537</p>
       </section>
 
       <footer>
