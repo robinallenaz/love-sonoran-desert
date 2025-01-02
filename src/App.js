@@ -2,11 +2,11 @@ import React from 'react';
 import './App.css';
 import ImageGallery from './components/ImageGallery';
 
-// Main App component
+// Main App component that serves as the root of the application
 function App() {
   return (
     <div className="App">
-      {/* Header section with navigation links */}
+      {/* Header section containing the main navigation links for the website */}
       <header className="header">
         <h1>Love Sonoran Desert</h1>
         <nav>
@@ -17,29 +17,29 @@ function App() {
         </nav>
       </header>
 
-      {/* Hero section with a call to action */}
+      {/* Hero section with a prominent call to action encouraging donations */}
       <section className="hero">
         <h2>Supporting Our Unhoused Neighbors in Arizona</h2>
         <p>Providing essential supplies and compassionate support to those in need</p>
         <button className="cta-button">Donate Now</button>
       </section>
 
-      {/* About section describing the organization */}
+      {/* About section providing information about the organization's mission and values */}
       <section id="about" className="about">
         <h2>About Us</h2>
         <p>Love Sonoran Desert is dedicated to helping unhoused individuals in Arizona by providing essential supplies and support. We believe in treating everyone with dignity and respect while working to make a positive impact in our community.</p>
       </section>
 
-      {/* Image gallery component showcasing images */}
+      {/* Image gallery component displaying a collection of images related to the Sonoran Desert */}
       <ImageGallery />
 
-      {/* Mission section detailing the organization's goals */}
+      {/* Mission section outlining the specific goals and activities of the organization */}
       <section id="mission" className="mission">
         <h2>Our Mission</h2>
         <p>We distribute vital supplies including water, food, hygiene products, and clothing to unhoused individuals across Arizona's Sonoran Desert region, where extreme temperatures and limited resources create urgent needs.</p>
       </section>
 
-      {/* How to Help section with options for getting involved */}
+      {/* How to Help section offering various ways for users to contribute to the cause */}
       <section id="help" className="help">
         <h2>How You Can Help</h2>
         <div className="help-options">
@@ -58,7 +58,7 @@ function App() {
         </div>
       </section>
 
-      {/* Contact section for reaching out to the organization */}
+      {/* Contact section providing details on how to reach out to the organization */}
       <section id="contact" className="contact">
         <h2>Contact Us</h2>
         <p>Email: LoveSonoranDesert@yahoo.com</p>
