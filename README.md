@@ -1,5 +1,5 @@
 # Love Sonoran Desert
-
+A website for the nonprofit Love Sonoran Desert. Functionality is still in progress (e.g., adding a link to donate).
 
 ## Installation
 To run this project locally, follow these steps:
