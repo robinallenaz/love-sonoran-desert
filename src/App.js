@@ -61,7 +61,7 @@ function App() {
       {/* Contact section providing details on how to reach out to the organization */}
       <section id="contact" className="contact">
         <h2>Contact Us</h2>
-        <p>Email: LoveSonoranDesert@yahoo.com</p>
+        <p>Email: <a href="mailto:LoveSonoranDesert@yahoo.com">LoveSonoranDesert@yahoo.com</a></p>
         <p>Phone: (480) 647-6537</p>
       </section>
 
