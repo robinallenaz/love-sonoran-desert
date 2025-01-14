@@ -66,7 +66,7 @@ function App() {
       </section>
 
       <footer>
-        <p>&copy; 2024 Love Sonoran Desert. All rights reserved.</p>
+        <p>&copy; 2025 Love Sonoran Desert. All rights reserved.</p>
       </footer>
     </div>
   );
